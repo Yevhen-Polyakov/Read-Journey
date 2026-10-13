@@ -8,8 +8,12 @@ type AuthSectionProps = {
 const AuthSection = ({children}:AuthSectionProps) => {
     return (
         <section className={css.auth}>
+
+            <div className={css.wrapLogo}>
+                <Icon variant="logo" className={`${cssIcon.logo} ${cssIcon.marginBottomLogo}`}/>
+                <h3 className={css.logoText}>READ JOURNEY</h3>
+            </div>
             
-            <Icon variant="logo" className={`${cssIcon.logo} ${cssIcon.marginBottomLogo}`}/>
             <h1 className={css.title}>Expand your mind, reading <span className={css.span}>a book</span></h1>
             
             {children}

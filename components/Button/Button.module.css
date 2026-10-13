@@ -10,6 +10,15 @@
     transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
 }
 
+@media screen and (min-width: 768px) {
+    .register{
+        padding: 16px 54px;
+        font-size: 20px;
+        width: 225px;
+        line-height: 1;
+    }
+}
+
 .register:hover{
     color: var(--white);
     background-color: transparent;
@@ -28,6 +37,15 @@
     transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
 }
 
+@media screen and (min-width:768px) {
+    .login{
+        padding: 16px 54px;
+        font-size: 20px;
+        line-height: 1;
+        width: 166px;
+    }
+}
+
 .login:hover{
     color: var(--white);
     background-color: transparent;
@@ -37,7 +55,6 @@
 .burger{
     width: 28px;
     height: 28px;
-
 }
 
 @media screen and (min-width:768px){

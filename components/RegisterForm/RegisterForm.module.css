@@ -4,6 +4,12 @@
     gap: 8px;
 }
 
+@media screen and (min-width: 768px) {
+    .form{
+        gap: 14px;
+    }
+}
+
 .input{
     border-radius: 12px;
     border: none;
@@ -12,6 +18,12 @@
     background-color: var(--graphite);
     color: var(--white);
     font-size: 12px;
+}
+
+@media screen and (min-width:768px) {
+    .input{
+        width: 472px;
+    }
 }
 
 .input:focus {
@@ -35,10 +47,22 @@
     margin-bottom: 12px;
 }
 
+@media screen and (min-width: 768px) {
+    .passwordWrap{
+        margin-bottom: 60px;
+    }
+}
+
 .buttonWrap{
     display: flex;
     align-items: center;
     gap: 14px;
+}
+
+@media screen and (min-width:768px) {
+    .buttonWrap{
+        gap: 20px;
+    }
 }
 
 .spanLink{
@@ -49,6 +73,13 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: var(--silverLight);
+}
+
+@media screen and (min-width:768px) {
+    .spanLink{
+        font-size: 14px;
+        line-height: 1.2;
+    }
 }
 
 .error{

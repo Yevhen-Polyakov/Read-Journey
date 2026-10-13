@@ -9,11 +9,11 @@
 
 .iconEye{
     position: absolute;
-    top: 14px;
+    top: 11px;
     right: 16px;
     color: var(--white);
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     cursor: pointer;
 }
 

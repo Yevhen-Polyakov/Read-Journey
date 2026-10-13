@@ -4,8 +4,13 @@
     padding: 20px;
 }
 
+@media screen and (min-width:768px) {
+    .auth{
+        padding: 40px 168px 214px 64px;
+    }
+}
+
 .title{
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 32px;
     line-height: 1;
@@ -13,6 +18,43 @@
     margin-bottom: 20px;
 }
 
+@media screen and (min-width:768px) {
+    .title{
+        font-size: 64px;
+        line-height: 94%;
+        width: 444px;
+        margin-bottom: 40px;
+    }
+}
+
 .span{
     color: var(--silverLight);
 }
+
+.wrapLogo{
+    display: flex;
+    gap: 4px;
+}
+
+@media screen and (min-width:768px) {
+    .wrapLogo{
+        margin-bottom: 157px;
+    }
+}
+
+.logoText{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .logoText{
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+}
+

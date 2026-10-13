@@ -1,5 +1,6 @@
 ﻿'use client'
 
+import { useState } from "react"
 import { useQuery, useQueryClient } from "@tanstack/react-query"
 import AddReading from "@/components/AddReading/AddReading"
 import Dashboard from "@/components/Dashboard/Dashboard"
@@ -11,6 +12,8 @@ import type { LibraryBook } from "@/types/books"
 import Details from "@/components/Details/Details"
 import Diary from "@/components/Diary/Diary"
 import Progress from "@/components/Progress/Progress"
+import Modal from "@/components/Modal/Modal"
+import BookIsRead from "@/components/BookIsRead/BookIsRead"
 
 type Props = {
     bookId?: string;
@@ -18,6 +21,7 @@ type Props = {
 
 const ReadingContent = ({ bookId }: { bookId: string }) => {
     const queryClient = useQueryClient()
+    const [isReadModalDismissed, setIsReadModalDismissed] = useState(false)
 
     const { data: book, isLoading } = useQuery({
         queryKey: ['book', bookId],
@@ -29,6 +33,9 @@ const ReadingContent = ({ bookId }: { bookId: string }) => {
 
     const activeSession = book.progress.find(item => item.status === 'active')
     const isReading = Boolean(activeSession)
+    const isBookRead = book.status === 'done' || book.progress.some(
+        item => item.status !== 'active' && item.finishPage >= book.totalPages
+    )
 
     const handleStarted = async (updated: LibraryBook) => {
         queryClient.setQueryData(['book', bookId], updated)
@@ -57,6 +64,11 @@ const ReadingContent = ({ bookId }: { bookId: string }) => {
                     </Details>
                     )}
             </Dashboard>
+            {isBookRead && !isReadModalDismissed && (
+                <Modal variant="theBook" onClose={() => setIsReadModalDismissed(true)}>
+                    <BookIsRead/>
+                </Modal>
+            )}
 
             <MyBook book={book} isReading={isReading} />
         </>
