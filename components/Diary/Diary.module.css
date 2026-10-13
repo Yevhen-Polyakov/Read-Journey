@@ -1,0 +1,162 @@
+.diary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.headerText{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.wrapIcon{
+    display: flex;
+    gap: 10px;
+}
+
+.empty {
+    color: var(--silverLight);
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-height: 360px;
+    overflow-y: auto;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--graphite);
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 16px;
+  bottom: -32px;
+  width: 2px;
+  background-color: var(--mediumDark);
+}
+
+.dateProgress {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconSquare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: var(--white);
+    margin-right: 9px;
+}
+
+.infoProgress {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.pageTime{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #686868;
+    margin-bottom: 17px;
+}
+
+.latestDate {
+    color: var(--white);
+}
+
+.procentReading{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.procent{
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--white);
+}
+
+.time {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--silverLight);
+}
+
+.graphicWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.page{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    color: var(--silverLight);
+}
+
+.buttonWrap{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.pagesHour{
+    width: 55px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #686868; 
+}
+
+.deleteButton {
+    flex: 0 0 32px;
+}
+
+.deleteButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+
+

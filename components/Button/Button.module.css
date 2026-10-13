@@ -1,0 +1,153 @@
+.register{
+    border-radius: 30px;
+    padding: 12px 29px;
+    background-color: var(--white);
+    color: var(--mediumDark);
+    font-weight: 700;
+    line-height: 1.29;
+    letter-spacing: 0.02em;
+    border: 1px solid rgba(249, 249, 249, 0.2);
+    transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
+}
+
+.register:hover{
+    color: var(--white);
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+.login{
+    border-radius: 30px;
+    padding: 12px 45px;
+    background-color: var(--white);
+    color: var(--mediumDark);
+    font-weight: 700;
+    line-height: 1.29;
+    letter-spacing: 0.02em;
+    border: 1px solid rgba(249, 249, 249, 0.2);
+    transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
+}
+
+.login:hover{
+    color: var(--white);
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+.burger{
+    width: 28px;
+    height: 28px;
+
+}
+
+@media screen and (min-width:768px){
+    .burger{
+        display: none;
+    }
+}
+
+.closeBurger{
+    position: absolute;
+    top: 41px;
+    right: 47px;
+}
+
+.close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.logout{
+    
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    border: 1px solid rgba(249, 249, 249, 0.2);
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
+}
+
+.logout:hover{
+    color: var(--mediumDark);
+    background-color: var(--white);
+}
+
+.display{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .display{
+        display: block;
+    }
+}
+
+.filter{
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100px;  
+    color: var(--white); 
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
+
+}
+
+.filter:hover{
+    color: var(--mediumDark);
+    background-color: var(--white);
+}
+
+.addLibrary{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    border: 1px solid rgba(249, 249, 249, 0.2);
+    border-radius: 30px;
+    padding: 12px 24px;
+    transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
+}
+
+.addLibrary:hover{
+    color: var(--mediumDark);
+    background-color: var(--white);
+}
+
+.addBook{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--white); 
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    width: 107px;
+}
+
+.addBook:hover {
+    color: var(--mediumDark);
+    background-color: var(--white);
+}
+
+.delete{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1.5px solid var(--borderDelete);
+    background-color: var(--delete);
+    transition: transform 120ms ease;
+}
+
+.delete:active{
+    transform: scale(0.94);
+}

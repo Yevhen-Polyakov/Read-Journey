@@ -1,0 +1,60 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input{
+    border-radius: 12px;
+    border: none;
+    padding: 14px 16px 14px 14px;
+    width: 100%;
+    background-color: var(--graphite);
+    color: var(--white);
+    font-size: 12px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--white);
+    background-color: var(--graphite) ;
+    -webkit-box-shadow: 0 0 0 1000px var(--graphite) inset ;
+    box-shadow: 0 0 0 1000px var(--graphite) inset;
+    background-clip: text;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.passwordWrap{
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.buttonWrap{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.spanLink{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--silverLight);
+}
+
+.error{
+   color: var(--red); 
+}
+
+.inputError {
+    border: 1px solid var(--red);
+}

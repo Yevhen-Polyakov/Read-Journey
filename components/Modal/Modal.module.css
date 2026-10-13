@@ -1,0 +1,27 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--backdrop);
+}
+
+.modal {
+    position: relative;
+    max-width: 355px;
+    padding: 40px 97px 40px 98px;
+    border-radius: 12px;
+    background-color: var(--mediumDark);
+    border: 1px solid var(--borderModal);
+}
+
+.goodModal{
+    padding: 60px 46px;
+}
+
+.previewBook{
+    padding: 40px 70px;
+}

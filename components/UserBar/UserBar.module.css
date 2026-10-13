@@ -1,0 +1,18 @@
+.userBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid var(--silver);
+}
+
+.span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white);
+}   

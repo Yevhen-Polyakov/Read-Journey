@@ -1,0 +1,26 @@
+.header{
+    background-color: var(--mediumDark);
+    border-radius: 15px;
+    padding: 11px 17px 11px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .marginRight232{
+        margin-right: 232px;
+    }
+}
+
+.wrapInfo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapInfo{
+        gap: 16px
+    }
+}

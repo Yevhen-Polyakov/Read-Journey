@@ -1,0 +1,40 @@
+.backdrop{
+    position: fixed;
+    inset: 0;
+    background-color: var(--backdrop);
+    z-index: 100;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100dvh;
+    box-sizing: border-box;
+    background-color: var(--graphite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 280px 0px 40px 0px;
+    animation: slideIn 350ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.menu > :last-child {
+    margin-top: auto;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce){
+    .menu{
+        animation: none;
+    }
+}

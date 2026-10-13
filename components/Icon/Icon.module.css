@@ -1,0 +1,98 @@
+.logo{
+    width: 42px;
+    height: 17px;
+}
+
+.marginBottomLogo{
+    margin-bottom: 42px;
+}
+
+.iconEye{
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    color: var(--white);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.iconBurger{
+   width: 28px;
+   height: 28px; 
+}
+
+.close{
+    width: 28px;
+    height: 28px;
+}
+
+.string{
+    width: 24px;
+    height: 24px;
+}
+
+.next{
+    width: 5px;
+    height: 8px;
+}
+
+.prev{
+    width: 4px;
+    height: 8px;
+}
+
+.selectArrow{
+    width: 9px;
+    height: 9px;
+}
+
+.delete{
+    width: 14px;
+    height: 14px;
+}
+
+.hours{
+    width: 13px;
+    height: 16px;
+}
+
+.pieChart{
+    width: 13;
+    height: 16;
+}
+
+.read{
+    width: 40px;
+    height: 40px;
+}
+
+.stop{
+    width: 40px;
+    height: 40px;
+}
+
+.hourGlass{
+    width: 16px;
+    height: 16px;
+}
+
+.pie-chart{
+   width: 16px;
+   height: 16px;     
+}
+
+.square{
+    width: 8px;
+    height: 8px;
+}
+
+.graphic{
+    width: 43px;
+    height: 18px;
+}
+
+.trash{
+   width: 14px;
+   height: 14px; 
+}

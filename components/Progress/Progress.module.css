@@ -1,0 +1,31 @@
+
+
+.title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    margin-bottom: 14px;
+}
+
+.text{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--silverLight);
+    margin-bottom: 20px;
+}
+
+.starWrap{
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--graphite);
+    border-radius: 50%;
+    padding: 24px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
