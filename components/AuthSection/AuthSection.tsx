@@ -10,7 +10,7 @@ const AuthSection = ({children}:AuthSectionProps) => {
         <section className={css.auth}>
 
             <div className={css.wrapLogo}>
-                <Icon variant="logo" className={`${cssIcon.logo} ${cssIcon.marginBottomLogo}`}/>
+                <Icon variant="logo" className={cssIcon.logo}/>
                 <h3 className={css.logoText}>READ JOURNEY</h3>
             </div>
             

@@ -75,6 +75,7 @@ const AddReading = ({ bookId, totalPages, isReading = false, minPage, onSubmit }
             </label>
 
             <Button 
+                className={css.marginBottomBtn}
                 type="submit" 
                 variant="addBook">
                     {isReading ? 'To stop' : 'To start'}

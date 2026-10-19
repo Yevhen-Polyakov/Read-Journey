@@ -4,9 +4,23 @@
     align-items: center;
 }
 
+@media screen and (min-width: 1280px) {
+    .item{
+        padding: 0 173px;
+    }
+}
+
 .img{
    border-radius: 8px;
    margin-bottom: 16px;
+}
+
+
+@media screen and (min-width:1280px) {
+    .img{
+        width: 153px;
+        height: 233px;
+    }
 }
 
 .textWrap{
@@ -27,6 +41,12 @@
     color: var(--white);
 }
 
+@media screen and (min-width:768px) {
+    .title{
+        font-size: 20px;
+    }
+}
+
 .name{
     font-family: var(--font-family);
     font-weight: 500;
@@ -34,6 +54,12 @@
     line-height: 1.1;
     letter-spacing: -0.02em;
     color: var(--silverLight);
+}
+
+@media screen and (min-width: 768px) {
+    .name{
+        font-size: 14px;
+    }
 }
 
 .span{
@@ -45,4 +71,10 @@
     text-align: center;
     color: var(--white);
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+    .span{
+        margin-bottom: 32px;
+    }
 }

@@ -6,12 +6,17 @@ const BookIsRead = () => {
         <div className={css.wrap}>
             <picture>
                 <source
-                    srcSet="/books.webp, /bookMob2x.webp"
-                />
+                    media="(min-width: 1440px)"
+                    srcSet="/bookImgDesktop1x.webp 1x, /bookImgDesktop2x.webp 2x"
+                    />
+                <source
+                    media="(max-width: 1439px)"
+                    srcSet="/books.webp 1x, /bookMob2x.webp 2x"
+                    />
                 <Image
                     className={css.img}
                     src="/books.webp"
-                    alt="iphone15"
+                    alt="Books"
                     width={50}
                     height={50}
                 />

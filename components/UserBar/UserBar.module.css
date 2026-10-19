@@ -1,3 +1,9 @@
+.userBarWrap{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .userBar{
     display: flex;
     justify-content: center;
@@ -8,11 +14,34 @@
     border: 1.5px solid var(--silver);
 }
 
+@media screen and (min-width:768px) {
+    .userBar{
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .span{
     font-weight: 700;
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.1;
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--white);
 }   
+
+.name{
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .name{
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 113%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: var(--white); 
+    }
+}

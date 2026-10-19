@@ -1,4 +1,21 @@
 .list{
     display: flex;
+    flex-wrap: wrap;
     gap: 21px;
+}
+
+@media screen and (min-width: 768px) {
+    .list{
+        gap: 25px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .list{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 27px 25px;
+        
+    }
 }

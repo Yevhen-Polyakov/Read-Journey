@@ -24,28 +24,33 @@ const Header = () => {
     
     return(
         <header className={css.header}>
-            <Link href="/recommended" aria-label="Home">
-                <Icon variant='logo' className={css.marginRight}/>
-            </Link>
+            
+            <div className={css.wrapLogo}>
+                <Link href="/recommended" aria-label="Home">
+                    <Icon variant='logo' className={css.marginRight232}/>
+                </Link>
+                <h3 className={css.logoText}>READ JOURNEY</h3>
+            </div>
+            
             
 
             <div className={css.navWrap}>
                 <UserNav/>
-            </div>
 
-            <div className={css.wrapInfo}>
-                <UserBar/>
-                <BurgerMenu/>
+                <div className={css.wrapInfo}>
+                    <UserBar/>
+                    <BurgerMenu/>
 
-                <Button
-                    onClick={handleLogout}
-                    className={cssBtn.display}
-                    variant='logout' 
-                    type='button' 
-                    aria-label='log out'
-                    >
-                    Log out
-                </Button>
+                    <Button
+                        onClick={handleLogout}
+                        className={cssBtn.display}
+                        variant='logout' 
+                        type='button' 
+                        aria-label='log out'
+                        >
+                        Log out
+                    </Button>
+                </div>
             </div>
 
         </header>

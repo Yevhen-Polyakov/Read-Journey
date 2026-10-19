@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 type Props = {
     className?: string;
     children: React.ReactNode;
-    variant: "modal" | "goodModal" |"previewBook" | "theBook";
+    variant: "modal" | "goodModal" |"previewBook" | "theBook" | "goodJob";
     onClose: () => void;
 }
 

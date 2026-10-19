@@ -1,14 +1,26 @@
 .myBook{
     background-color: var(--mediumDark);
-    padding: 42px 20px 40px 20px;
+    padding: 42px 20px;
     border-radius: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .myBook{
+      padding: 40px 40px 25px 40px; 
+    }
+}
+
+@media screen  and (min-width:1280px){
+    .myBook{
+        width: 847px;
+        padding: 40px 40px 53px 40px;
+    }    
 }
 
 .wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
 }
 
 .headerTitle{
@@ -18,24 +30,51 @@
     margin-bottom: 40px;
 }
 
+@media screen and (min-width:1280px) {
+    .headerTitle{
+        margin-bottom: 44px;
+    }
+}
+
 .heading {
     align-self: flex-start;
     font-weight: 700;
     font-size: 18px;
+    line-height: 1;
     letter-spacing: -0.02em;
     color: var(--white);
 }
 
+@media screen and (min-width:768px) {
+    .heading{line-height: 1.1;
+        font-size: 28px;
+    }   
+}
+
 .timeBook{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 133%;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--silverLight); 
 }
 
 .cover {
     border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .cover{
+        width: 169px;
+        height: 256px;
+        margin-bottom: 25px;
+    }
+}
+
+
+@media screen and (min-width:1280px) {
+    .cover{
+        width: 224px;
+        height: 340px;
+    }
 }
 
 .placeholder {
@@ -47,22 +86,43 @@
 
 .info {
     text-align: center;
+    width: 146px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .info{
+        width: 317px;
+        margin-bottom: 16px;
+    }
 }
 
 .title {
     font-weight: 700;
-    font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--white);
+    margin-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 20px;
+        letter-spacing: 1;
+    }
 }
 
 .author {
-    margin-top: 4px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 10px;
     letter-spacing: -0.02em;
     color: var(--silverLight);
+}
+
+@media screen and (min-width: 768px) {
+    .author{
+        font-size: 14px;
+    }    
 }
 
 .indicator {
@@ -81,15 +141,6 @@
     animation: pulse 1.6s ease-in-out infinite;
 }
 
-@keyframes pulse {
-    0%,
-    100% {
-        box-shadow: 0 0 0 0 rgba(233, 5, 22, 0.45);
-    }
-    50% {
-        box-shadow: 0 0 0 10px rgba(233, 5, 22, 0);
-    }
-}
 
 @media (prefers-reduced-motion: reduce) {
     .reading {

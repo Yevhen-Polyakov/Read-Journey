@@ -25,7 +25,7 @@ const ItemCardBook = ({book, loading = "lazy"}: Props) => {
                 />
 
             <div className={css.textWrap}>
-                <h3 className={css.name}>{book.title}</h3>
+                <h3 className={css.name}>{book.title.charAt(0).toUpperCase() + book.title.slice(1, 20).toLocaleLowerCase()}</h3>
                 <p className={css.author}>{book.author}</p>
             </div>    
             

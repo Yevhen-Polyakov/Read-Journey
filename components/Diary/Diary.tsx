@@ -102,7 +102,7 @@ const Diary = ({ bookId, totalPages, progress }: Props) => {
                                                     disabled={!readingId || deleteMutation.isPending}
                                                     onClick={() => readingId && deleteMutation.mutate(readingId)}>
                                                         <Icon variant='trash'/>
-                                            </Button>
+                                                </Button>
                                             </div>
                                             
                                             <span className={css.pagesHour}>{session.speed} pages per hour</span>

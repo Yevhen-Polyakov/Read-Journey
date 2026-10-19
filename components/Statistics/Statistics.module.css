@@ -1,3 +1,38 @@
+.static{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }  
+    
+@media screen and (min-width:768px){
+    .static{
+        gap:16px;
+    }
+}   
+
+@media screen and (min-width:1280px) {
+    .static{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }   
+}
+
+.title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--white); 
+}
+
+@media screen and (min-width:768px) {
+    .title{
+        font-size: 20px;
+        margin-right: 172px;
+    }
+}
+
 .wrap {
     display: flex;
     flex-direction: column;
@@ -8,10 +43,49 @@
     border-radius: 12px; 
 }
 
+@media screen and (min-width:768px) {
+    .wrap{
+        width: 321px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .wrap{
+        padding: 31px 71px 20px 71px;
+    }
+}
+
 .headerText{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; 
+    justify-content: space-between; 
+}
+
+@media screen and (min-width: 768px) {
+    .headerText{
+        justify-content: start;
+        
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .headerText{
+        justify-content: space-between;
+    }
+}
+
+.paragraph{
+    display: none;
+}
+
+@media screen and (min-width:1280px) {
+    .paragraph{
+        display: block;
+        width: 293px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: var(--silverLight); 
+    }
 }
 
 .process{
@@ -19,10 +93,30 @@
     gap: 10px;
 }
 
+@media screen and (min-width:768px) {
+    .process{
+        gap: 8px;
+    }
+}
+
 .chart {
     position: relative;
     width: 116px;
     height: 116px;
+}
+
+@media screen and (min-width: 768px) {
+    .chart {
+        width: 138px;
+        height: 138px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .chart{
+        width: 168px;
+        height: 168px;
+    }
 }
 
 .svg {
@@ -44,6 +138,12 @@
     color: var(--white);
 }
 
+@media screen and (min-width:768px) {
+    .percent{
+        font-size: 20px;
+    }
+}
+
 .legend {
     display: flex;
     gap: 20px;
@@ -51,6 +151,12 @@
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: -0.02em;
+}
+
+@media screen and (min-width:768px) {
+    .legend{
+        gap: 15px;
+    }
 }
 
 .dot {
@@ -73,6 +179,25 @@
     color: var(--white);
 }
 
+@media screen and (min-width:768px) {
+    .value{
+        font-size: 20px;
+        line-height: 1;
+    }
+}
+
 .text {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: center;
     color: var(--silverLight);
+}
+
+@media screen and (min-width: 768px) {
+    .text{
+        font-size: 12;
+    }
+    
 }

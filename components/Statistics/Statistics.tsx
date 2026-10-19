@@ -27,6 +27,8 @@ const Statistics = ({ totalPages, progress }: Props) => {
                 </div>
             </div>
 
+                <p className={css.paragraph}>Each page, each chapter is a new round of knowledge, a new step towards understanding. By rewriting statistics, we create our own reading history.</p>
+        
             <div className={css.wrap}>
                 <div
                     className={css.chart}

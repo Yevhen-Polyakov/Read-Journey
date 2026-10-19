@@ -22,12 +22,48 @@
     padding: 60px 46px;
 }
 
+@media screen and (min-width:768px) {
+    .goodModal{
+       padding: 50px; 
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .goodModal{
+        min-width: 500px;
+        padding: 50px 0;
+        
+    }
+}
+
 .previewBook{
     padding: 40px 70px;
 }
 
+@media screen and (min-width: 768px) {
+    .previewBook{
+        padding: 50px 91px;
+        width: 500px;
+        max-width: 500px;    
+    }
+}
+
 .theBook{
     padding: 60px 46px;
-    width: 335px;
+    width: 335px;   
+}
+
+@media screen and (min-width: 768px) {
+    .theBook{
+        padding: 50px;
+        width: 342px;
+        height: 308px
+    }
+}
+
+.goodJob{
+    padding: 50px;
     
 }
+
+

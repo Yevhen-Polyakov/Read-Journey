@@ -2,7 +2,7 @@ import css from "./Button.module.css"
 
 type ButtonProps = {
     children: React.ReactNode;
-    variant?: "register" | "login" |"burger" | "close" | "logout" | "filter" |"addLibrary" | "addBook" | "delete";
+    variant?: "register" | "login" |"burger" | "close" | "logout" | "filter" |"addLibrary" | "addBook" | "delete" ;
     type?: "button" | "submit" | "reset";
     "aria-label"?: string;
     disabled?: boolean;

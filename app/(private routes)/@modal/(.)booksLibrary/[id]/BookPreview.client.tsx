@@ -35,7 +35,7 @@ const BookPreviewClient = ({ id }: { id: string }) => {
                     )}
 
                     <div className={css.textWrap}>
-                        <h1 className={css.title}>{book.title}</h1>
+                        <h1 className={css.title}>{book.title.charAt(0).toUpperCase() + book.title.slice(1, 33).toLowerCase()}</h1>
                         <p className={css.name}>{book.author}</p>
                         <span className={css.span}>{book.totalPages} page</span>
                     </div>

@@ -54,12 +54,10 @@ const RegisterForm = () => {
              }
             reset()
             toast.success("Registration successful!")
-            console.log("User", dataUser)
 
         } catch(error){
             const message = axios.isAxiosError(error) ? error.response?.data?.error ?? "Registration failed" : "Something went wrong"; 
             toast.error(message)
-
         }
     }
 

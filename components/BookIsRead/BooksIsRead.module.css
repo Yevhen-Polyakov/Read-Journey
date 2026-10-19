@@ -1,9 +1,28 @@
-
 .wrap{
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+}
+
+@media screen and (min-width) {
+    .wrap{
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .img{
+        width: 60;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .img{
+        width: 68px;
+
+    }
 }
 .textWrap{
     display: flex;
@@ -12,13 +31,24 @@
     gap: 10px;
 }
 
+@media screen and (min-width:768px) {
+    .textWrap{
+        gap: 14px;
+    }
+}
+
 .title{
     font-weight: 700;
     font-size: 18px;
     line-height: 1;
     letter-spacing: -0.02em;
     color: var(--white);
+}
 
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 20px;
+    }
 }
 
 .text{

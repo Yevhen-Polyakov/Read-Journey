@@ -14,6 +14,7 @@ import Diary from "@/components/Diary/Diary"
 import Progress from "@/components/Progress/Progress"
 import Modal from "@/components/Modal/Modal"
 import BookIsRead from "@/components/BookIsRead/BookIsRead"
+import css from "./Reading.module.css"
 
 type Props = {
     bookId?: string;
@@ -43,7 +44,7 @@ const ReadingContent = ({ bookId }: { bookId: string }) => {
     }
 
     return (
-        <>
+        <div className={css.wrap}>
             <Dashboard>
                 <AddReading bookId={bookId} totalPages={book.totalPages} isReading={isReading} minPage={activeSession?.startPage} onSubmit={handleStarted} />
                 {book.progress.length === 0 ? (
@@ -71,7 +72,7 @@ const ReadingContent = ({ bookId }: { bookId: string }) => {
             )}
 
             <MyBook book={book} isReading={isReading} />
-        </>
+        </div>
     )
 }
 

@@ -4,6 +4,14 @@
     gap: 8px;
 }
 
+@media screen and (min-width: 768px) {
+    .item {
+        width: 137px;
+        height: 248px;
+    }
+}
+
+
 .img{
     border-radius: 8px;
 }
@@ -19,6 +27,9 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .author{

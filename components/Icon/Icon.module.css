@@ -17,6 +17,18 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+    .iconEye{
+        right: 115px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .iconEye{
+        right: 16px;
+    }
+}
+
 .iconBurger{
    width: 28px;
    height: 28px; 
@@ -27,9 +39,25 @@
     height: 28px;
 }
 
-.string{
+.arrow{
     width: 24px;
     height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .arrow{
+        position: absolute;
+        top: 0;
+        right: -20px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+   .arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+   }
 }
 
 .next{
@@ -57,9 +85,23 @@
     height: 16px;
 }
 
+@media screen and (min-width: 768px) {
+    .hours{
+        width: 20px;
+        height: 20px;
+    }   
+}
+
 .pieChart{
     width: 13;
     height: 16;
+}
+
+@media screen and (min-width: 768px) {
+    .pieChart{
+        width: 20px;
+        height: 20px;
+    }   
 }
 
 .read{
@@ -67,9 +109,23 @@
     height: 40px;
 }
 
+@media screen and (min-width:768px) {
+    .read{
+        width: 50px;
+        height: 50px;
+    }
+}
+
 .stop{
     width: 40px;
     height: 40px;
+}
+
+@media screen and (min-width:768px) {
+    .stop{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .hourGlass{
@@ -87,9 +143,23 @@
     height: 8px;
 }
 
+@media screen and (min-width: 768px){
+    .square{
+        width: 16px;
+        height: 16px;
+    }
+}
+
 .graphic{
     width: 43px;
     height: 18px;
+}
+
+@media screen and (min-width:768px) {
+    .graphic{
+        width: 59px;
+        height: 24px;
+    }
 }
 
 .trash{

@@ -28,8 +28,8 @@ const MyBook = ({ book, isReading,  }: Props) => {
                         className={css.cover}
                         src={book.imageUrl}
                         alt={book.title}
-                        width={224}
-                        height={340}
+                        width={137}
+                        height={208}
                         priority
                     />
                 ) : (

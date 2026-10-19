@@ -4,7 +4,18 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .wrapper{
+        width: 313px; 
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .wrapper{
+        padding: 20px;
+    }
 }
 
 .title{
@@ -13,12 +24,21 @@
     line-height: 1;
     letter-spacing: -0.02em;
     color: var(--white);
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
 }
 
 .list{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 26px;
 }
 
 .item{

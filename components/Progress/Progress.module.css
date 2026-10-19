@@ -1,4 +1,9 @@
 
+@media screen and (min-width:768px) {
+    .wrap{
+        width: 305px;
+    }
+}
 
 .title{
     font-weight: 700;
@@ -9,14 +14,25 @@
     margin-bottom: 14px;
 }
 
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+}
+
 .text{
-    font-family: var(--font-family);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--silverLight);
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .text{
+        margin-bottom: 60px;
+    }
 }
 
 .starWrap{
@@ -28,4 +44,10 @@
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .starWrap{
+        margin-bottom: 52px;
+    }
 }

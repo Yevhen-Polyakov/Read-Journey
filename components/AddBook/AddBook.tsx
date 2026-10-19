@@ -11,6 +11,7 @@ import { addBook } from '@/lib/api/clientApi'
 import toast from 'react-hot-toast'
 import GoodJob from '../GoodJob/GoodJob'
 import Modal from '../Modal/Modal'
+import cssMargin from "../Button/Button.module.css"
 
 export const filterSchema = yup.object({
     queryBook: yup
@@ -60,7 +61,7 @@ const FiltersMyLibrary = ({onSubmit, onClear}: Props) => {
     })
 
       if (isSuccess) {
-          return <Modal variant='goodModal' onClose={reset}>
+          return <Modal variant='goodJob' onClose={reset}>
             <GoodJob/>
         </Modal>
     }
@@ -134,6 +135,7 @@ const FiltersMyLibrary = ({onSubmit, onClear}: Props) => {
                 </label>
 
                 <Button
+                    className={cssMargin.marginBottom}
                     type='submit'
                     aria-label="To apply"
                     variant="addBook"

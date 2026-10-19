@@ -24,8 +24,18 @@ const MessageLibrary = () => {
                 </picture>
             </div>
 
-            <p className={css.text}>To start training, add <span className={css.span}>some of your books or from the recommended ones</span> some of your books or from the recommended ones</p>
-            
+            <p className={css.text}>
+                <span className={css.mobileText}>
+                    To start training, add{' '}
+                    <span className={css.span}>
+                        some of your books or from the recommended ones
+                    </span>{' '}
+                    some of your books or from the recommended ones
+                </span>
+                <span className={css.desktopText}>
+                    To start training, add  <span className={css.span}>some of your books</span> or from the recommended ones
+                </span>
+            </p>
 
         </div>
     )

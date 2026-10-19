@@ -22,7 +22,8 @@
 
 @media screen and (min-width:768px) {
     .input{
-        width: 472px;
+        min-width: 295px;
+        max-width: 472px;
     }
 }
 
@@ -42,6 +43,7 @@
     transition: background-color 5000s ease-in-out 0s;
 }
 
+
 .passwordWrap{
     position: relative;
     margin-bottom: 12px;
@@ -53,6 +55,18 @@
     }
 }
 
+@media screen and (min-width:1280px) {
+    .passwordWrap{
+        margin-bottom: 68px;
+    }
+}
+
+@media screen and (min-width:768px) {
+   .marginBottom{
+        margin-bottom: 132px;
+    } 
+}
+ 
 .buttonWrap{
     display: flex;
     align-items: center;

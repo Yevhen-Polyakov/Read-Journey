@@ -5,30 +5,27 @@ import Button from '../Button/Button';
 import { addRecommendedBook } from '@/lib/api/clientApi';
 import toast from 'react-hot-toast';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import GoodJob from '../GoodJob/GoodJob';
 
 type Props = {
     data: Books;
+    onSuccess: () => void;
 }
-const BookInfo = ({data}: Props) => {
+const BookInfo = ({data, onSuccess}: Props) => {
     
     const queryClient = useQueryClient()
 
-    const { mutate, isSuccess } = useMutation({
+    const { mutate } = useMutation({
         mutationFn: () => addRecommendedBook(data._id),
         onSuccess: async () => {
             await queryClient.invalidateQueries({ queryKey: ['books'] })
             await queryClient.invalidateQueries({ queryKey: ['own'] })
-        
+
+            onSuccess()
         },
         onError: (error) => {
             toast.error(error instanceof Error ? error.message : String(error))
         },
     })
-
-    if (isSuccess) {
-        return <GoodJob />
-    }
 
     return(
         
@@ -43,7 +40,7 @@ const BookInfo = ({data}: Props) => {
                         height={213}/>
 
                     <div className={css.textWrap}>
-                        <h2 className={css.title}>{data.title}</h2>
+                        <h2 className={css.title}>{data.title.charAt(0).toUpperCase() + data.title.slice(1, 10).toLocaleLowerCase()}</h2>
                         <p className={css.name}>{data.author}</p>
                     </div>
 

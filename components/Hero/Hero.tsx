@@ -5,9 +5,12 @@ const Hero = () => {
     return (
        <section className={css.hero}>
             <picture>
+
                 <source
-                    srcSet="/iPhone15-Black-1x.webp 1x, /iPhone15-Black-2x.webp 2x"
-                />
+                    media="(min-width: 1440px)"
+                    srcSet="/iPhone15BlackDesktop1x.webp 1x, /iPhone15BlackDesktop2x.webp 2x"
+                    />
+
                 <Image
                     className={css.img}
                     src="/iPhone15-Black-1x.webp"

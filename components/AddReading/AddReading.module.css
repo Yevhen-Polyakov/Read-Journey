@@ -6,13 +6,29 @@
     display: block;
     font-weight: 500;
     font-size: 10px;
-    line-height: 120%;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--white);
     margin-bottom: 8px;
     margin-left: 14px;
 }
 
+@media screen and (min-width:768px) {
+    .span{
+        font-size: 14px;
+    }
+}
+
 .marginBottom{
     margin-bottom: 40px;
+}
+
+@media screen and  (min-width:1280px){
+    .marginBottom{
+        margin-bottom: 0px;
+    }  
+}
+
+.marginBottomBtn {
+    margin-bottom: 20px;
 }

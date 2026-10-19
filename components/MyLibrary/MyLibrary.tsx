@@ -51,7 +51,6 @@ const MyLibrary = () => {
         queryFn: () => getOwnBooks(category.value === '' ? undefined : category.value)
     })
 
-    console.log("own", data)
     const hasNoBooks = !isLoading && !error && data?.length === 0
 
     const handleBlur = (event: FocusEvent<HTMLDivElement>) => {
@@ -138,7 +137,7 @@ const MyLibrary = () => {
                             </Link>
                             <div className={css.infoBook}>
                                 <div className={css.nameWrap}>
-                                    <h2 className={css.bookTitle}>{book.title}</h2>
+                                    <h2 className={css.bookTitle}>{book.title.charAt(0).toLocaleUpperCase() + book.title.slice(1, 13).toLocaleLowerCase()}</h2>
                                     <p className={css.bookAuthor}>{book.author}</p>
                                 </div>
 

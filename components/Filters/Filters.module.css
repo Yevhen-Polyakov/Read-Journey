@@ -3,13 +3,17 @@
     flex-direction: column;
     margin-bottom: 20px;
 }
+@media screen and (min-width: 1280px) {
+   .form {
+        margin-bottom: 0;
+   }
+}
 
 .label{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
 
 .span{
@@ -20,4 +24,10 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    .span{
+        font-size: 14px;
+    }
 }

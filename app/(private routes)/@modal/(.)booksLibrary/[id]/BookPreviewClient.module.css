@@ -7,6 +7,12 @@
     margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+    .img{
+        width: 153px;
+    }
+}
+
 .textWrap{
     display: flex;
     flex-direction: column;
@@ -25,6 +31,12 @@
     margin-bottom: 2px;
 }
 
+@media screen and (min-width:768px) {
+    .title{
+        font-size: 20px;
+    }
+}
+
 .name{
     font-weight: 500;
     font-size: 12px;
@@ -32,6 +44,12 @@
     letter-spacing: -0.02em;
     color: var(--silverLight);
     margin-bottom: 4px;
+}
+
+@media screen and ( min-width:768px) {
+    .name{
+        font-size: 14px;
+    }
 }
 
 .span{
@@ -45,6 +63,7 @@
 
 .link{
     font-weight: 700;
+    font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--white); 

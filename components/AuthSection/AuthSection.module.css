@@ -6,7 +6,14 @@
 
 @media screen and (min-width:768px) {
     .auth{
+        
         padding: 40px 168px 214px 64px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .auth{
+        padding: 40px 64px;
     }
 }
 
@@ -34,6 +41,7 @@
 .wrapLogo{
     display: flex;
     gap: 4px;
+    margin-bottom: 42px;
 }
 
 @media screen and (min-width:768px) {
@@ -41,6 +49,13 @@
         margin-bottom: 157px;
     }
 }
+
+@media screen and (min-width:1280px) {
+    .wrapLogo{
+        margin-bottom: 107px;
+    }    
+}
+
 
 .logoText{
     display: none;

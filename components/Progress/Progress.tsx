@@ -3,7 +3,7 @@ import css from './Progress.module.css'
 
 const Progress = () => {
     return(
-        <div >
+        <div className={css.wrap}>
             <h3 className={css.title}>Progress</h3>
             <p className={css.text}>Here you will see when and how much you read. To record, click on the red button above.</p>
 

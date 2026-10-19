@@ -14,6 +14,14 @@
     font-weight: 700;
     font-size: 18px;
     color: var(--white);
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+@media screen and (min-width:768px) {
+    .title{
+        font-size: 20px;
+    }
 }
 
 .wrapIcon{
@@ -38,6 +46,20 @@
     background-color: var(--graphite);
 }
 
+@media screen and (min-width:768px) {
+    .list{
+        width: 321px;
+        padding: 16px 16px 36px 16px;
+        gap: 14px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .list{
+        gap: 22px;
+    }
+}
+
 .item {
     position: relative;
     display: flex;
@@ -55,12 +77,29 @@
   background-color: var(--mediumDark);
 }
 
+@media screen and (min-width:768px) {
+    .item::before{
+        content: '';
+        top:11px;
+        left: 9px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .item::before{
+        content: '';
+        top: 15px;
+        left: 9px;
+        
+    }
+}
 .dateProgress {
     display: flex;
     justify-content: space-between;
 }
 
 .iconSquare {
+    padding: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +108,13 @@
     border-radius: 4px;
     background-color: var(--white);
     margin-right: 9px;
+}
+
+@media screen and (min-width:768px) {
+    .iconSquare{
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .infoProgress {
@@ -85,6 +131,18 @@
     gap: 16px;
 }
 
+@media screen and (min-width:768px) {
+    .pageTime{
+       gap: 18px; 
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .pageTime{
+        gap: 30px;
+    }
+}
+
 .date {
     font-weight: 700;
     font-size: 12px;
@@ -92,6 +150,13 @@
     letter-spacing: 0.02em;
     color: #686868;
     margin-bottom: 17px;
+}
+
+@media screen and (min-width:768px) {
+    .date{
+        font-size: 20px;
+        margin-bottom: 28px;
+    }  
 }
 
 .latestDate {
@@ -111,12 +176,25 @@
     color: var(--white);
 }
 
+@media screen  and (min-width: 768px){
+    .procent{
+        font-size: 20px;
+        line-height: 1;
+    }
+}
+
 .time {
     font-weight: 500;
     font-size: 10px;
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--silverLight);
+}
+
+@media screen and (min-width:768px) {
+    .time{
+        font-size: 12px;
+    }
 }
 
 .graphicWrap{
@@ -133,21 +211,46 @@
     color: var(--silverLight);
 }
 
+@media screen and (min-width:768px) {
+    .page{
+        font-size: 14px;
+    }
+}
+
 .buttonWrap{
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
+@media screen and (min-width:786px) {
+    .buttonWrap{
+      gap: 8px;  
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .buttonWrap{
+        gap: 10px;
+    }
+
+}
+
 .pagesHour{
     width: 55px;
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 10px;
-    line-height: 120%;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     color: #686868; 
 }
+
+@media screen and (min-width:768px) {
+    .pagesHour{
+        font-size: 12px;
+    }
+}
+
 
 .deleteButton {
     flex: 0 0 32px;

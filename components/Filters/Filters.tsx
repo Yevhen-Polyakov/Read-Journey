@@ -4,7 +4,6 @@ import { useForm } from 'react-hook-form'
 import css from './Filters.module.css'
 import cssInput from '../RegisterForm/RegisterForm.module.css'
 import Button from '../Button/Button'
-import StartWorkout from '../StartWorkout/StartWorkout'
 
 type FilterForm = {
     queryBook: string;
@@ -61,7 +60,7 @@ const {register, handleSubmit,} = useForm<FilterForm>()
 
             </form>
 
-            <StartWorkout/>
+            
         </>
     )
 }

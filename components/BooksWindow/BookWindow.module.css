@@ -1,0 +1,30 @@
+.wrap{ 
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .wrap{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 15px 20px 14px 20px;
+        background-color: var(--graphite);
+        border-radius: 12px;
+    }
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+}
+
+.text{
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--silverLight);
+}
+
+.span{
+    color: var(--white);
+}

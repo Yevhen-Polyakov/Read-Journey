@@ -73,7 +73,7 @@ const LoginForm = () => {
                     <p className={css.error}>{errors.email.message}</p>
                 )}
 
-            <div className={css.passwordWrap}>
+            <div className={`${css.passwordWrap} ${css.marginBottom}`}>
                 <input
                     className={css.input} 
                     type={showPassword ? "text" : "password"}
