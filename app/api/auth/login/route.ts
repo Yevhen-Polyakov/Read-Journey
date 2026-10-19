@@ -29,14 +29,14 @@ export async function POST(req: NextRequest) {
         return NextResponse.json(apiRes.data);
 
     } catch (error) {
+        const apiError = error as ApiError;
+
         return NextResponse.json(
             {
-                error:
-                    (error as ApiError).response?.data?.error ??
-                    (error as ApiError).message,
+                error: apiError.response?.data?.error ?? apiError.message,
             },
             {
-                status: (error as ApiError).status,
+                status: apiError.response?.status ?? 500,
             }
         );
     }
