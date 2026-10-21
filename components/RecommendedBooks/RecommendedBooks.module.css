@@ -55,7 +55,7 @@
     }
 }
 
-.recommendedBooks ul {
+.list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -65,30 +65,51 @@
     row-gap: 20px;
 }
 
-.recommendedBooks li{
+.list > li{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-width: 0;
 }
 
+.bookButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    cursor: pointer;
+}
+
+.bookButton:focus-visible{
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
 @media screen and (min-width: 375px) {
-    .recommendedBooks ul {
+    .list {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         margin-bottom: 20px;
     }
 }
 
-.recommendedBooks li:nth-child(n + 4) {
+.list > li:nth-child(n + 4) {
 	display: none;
 }
 
 
 @media screen and (min-width: 1280px) {
-    .recommendedBooks ul {
+    .list {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .recommendedBooks li:nth-child(n + 9):nth-child(-n + 10) {
+    .list > li:nth-child(n + 9):nth-child(-n + 10) {
         display: flex;
     }
 }
@@ -156,6 +177,4 @@
     background-color: currentColor;
     width: 35px;
 }
-
-
 
