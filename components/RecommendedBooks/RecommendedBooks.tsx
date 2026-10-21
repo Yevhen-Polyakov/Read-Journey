@@ -53,7 +53,7 @@ const RecommendedBooks = ({results}: Props) => {
             </ul>
 
             {selectedBook && (
-                <Modal variant={showGoodJob ? "goodJob" : "previewBook"} onClose={handleModalClose}>
+                <Modal variant={showGoodJob ? "goodJob" : "goodModal"} onClose={handleModalClose}>
                     {showGoodJob ? (
                         <GoodJob />
                     ) : (
